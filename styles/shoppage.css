@@ -1,0 +1,310 @@
+.notification .container {
+    max-width: 1152px;
+    height: 315px;
+    background-color: #214935;
+    margin: 174px auto 89px auto;
+    display: flex;
+    position: relative;
+}
+
+.notification .container .background-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.notification .container .background-img img {
+    width: 215px;
+    height: 125px;
+}
+
+.notification .content-center {
+    width: 612px;
+    height: 262px;
+    border-radius: 30px 0px;
+    background-color: #FFF;
+    margin-left: 74px;
+    margin-top: 26px;
+}
+
+.notification .content-center h1 {
+    color: #789D5C;
+    font-size: 50px;
+    font-family: Days One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 25px 35px 0 35px;
+}
+
+.notification .content-center h1 span {
+    color: #297C35;
+    font-size: 60px;
+}
+
+.notification .content-center h2 {
+    color: #000;
+    font-size: 35px;
+    font-family: Delius;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 19px 167.5px 0 167.5px;
+}
+
+.notification .content-center .btn-shop {
+    padding-top: 25px;
+    padding-left: 184px;
+}
+
+.notification .content-center .btn-shop button {
+    width: 244px;
+    height: 58px;
+    border-radius: 15px;
+    border: none;
+    background-color: #297C35;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Days One;
+    font-weight: 400;
+    text-align: center;
+}
+
+.notification .content-right {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 73px;
+}
+
+.notification .content-right div {
+    width: 318px;
+    height: 290px;
+    border-radius: 100px 100px 0px 0px;
+    background-color: #FFF;
+}
+
+.notification .content-right img {
+    position: absolute;
+    z-index: 1;
+    width: 318px;
+    height: 299px;
+    top: -22px;
+}
+
+
+
+
+
+
+
+.our-plant .container,
+.other-product .container
+ {
+    /* position: relative; */
+    width: 1152px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.our-plant .title,
+.other-product .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1152px;
+    height: 106px;
+    background-color: #c0d3c4;
+}
+
+.our-plant .title p ,
+.other-product .title p{
+    /* width: 412px; */
+    color: #567e32;
+    font-family: Days One;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 63.65px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.our-plant .title span ,
+.other-product .title span {
+    color: black;
+}
+
+.our-plant .listItem{
+    width: 1152px;
+    height: 767px;
+    margin-top: 84px;
+}
+.other-product .listItem{
+    height: 356px;
+    width: 1152px;
+    margin-top: 84px;
+}
+
+.our-plant .listItem ul,
+.other-product .listItem ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.our-plant .listItem ul li,
+.other-product .listItem ul li {
+    position: relative;
+    width: 270px;
+    height: 356px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid rgba(86, 126, 50, 1);
+}
+
+.our-plant #list2 {
+    margin-top: 47px;
+}
+
+.our-plant .item-icon,
+.other-product .item-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 5px;
+    right: 20px;
+    z-index: 10;
+}
+
+.our-plant .item-image,
+.other-product .item-image {
+    margin: 5px 9.5px 0px 9.5px;
+}
+
+.our-plant .item-image img,
+.other-product .item-image img {
+    width: 200px;
+    height: 198px;
+    margin: 0 auto;
+}
+
+.our-plant .item-name,
+.other-product .item-name {
+    width: 233px;
+    height: 28px;
+    margin-left: 18px;
+}
+
+.our-plant .item-name p,
+.other-product .item-name p {
+    color: #000;
+    font-size: 16px;
+    font-family: Anek Bangla;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.our-plant .listItem .item-eval,
+.other-product .listItem .item-eval {
+    display: flex;
+    width: 136px;
+    height: 19px;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.our-plant .item-eval img,
+.other-product .item-eval img {
+    width: 19px;
+    height: 19px;
+}
+
+.our-plant .item-price,
+.other-product .item-price {
+    width: 101px;
+    height: 24px;
+    margin-left: 18px;
+    margin-top: 7px;
+}
+
+.our-plant .item-price p,
+.other-product .item-price p {
+    color: rgba(0, 0, 0, 1);
+    font-family: Carrois Gothic SC;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20.26px;
+}
+
+.our-plant .item-price del,
+.other-product .item-price del {
+    color: rgba(83, 126, 46, 1);
+}
+
+.our-plant .item-buy,
+.other-product .item-buy {
+    width: 187.5px;
+    height: 30.5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 60px;
+}
+
+.our-plant .item-buy .details button,
+.other-product .item-buy .details button {
+    display: flex;
+    align-items: center;
+    width: 97.33px;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+    gap: 10px;
+    color: #ffffff;
+    background: rgba(165, 202, 138, 1);
+    border: none;
+}
+
+.our-plant .item-buy .add button,
+.other-product .item-buy .add button {
+    width: 85.17px;
+    height: 30px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 50px;
+    gap: 10px;
+    color: #ffffff;
+    background: rgba(120, 157, 92, 1);
+    border: none;
+}
+
+.our-plant .btn,
+.other-product .btn{
+    width: 1152px;
+    display: flex;
+    justify-content: center;
+}
+.our-plant .btn{
+    margin: 65px 0px 108px 0px;
+}
+.other-product .btn{
+    margin: 81px 0px 124px 0px;
+}
+.our-plant .btn button,
+.other-product .btn button {
+    width: 262px;
+    height: 65px;
+    font-family: Days One;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.46px;
+    border-radius: 50px;
+    padding: 20px 63px 20px 63px;
+    color: #ffffff;
+    background-color: #789d5c;
+    border: none;
+}

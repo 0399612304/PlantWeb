@@ -83,7 +83,7 @@
     padding: 12px 10px 12px 20px;
     border-radius: 15px;
     background-color: #7DAD76;
-    /* border:1px solid #94BE9A; */
+    border: 2px solid #297C35;
     color: #D9D9D9;
 }
 
@@ -93,12 +93,12 @@
     padding: 12px 10px 12px 20px;
     border-radius: 15px;
     background: #7DAD76;
-    border: none;
+    border: 2px solid #297C35;
 }
 
-.contact .contact-form ul li input[placeholder],
-.contact .contact-form ul li textarea[placeholder] {
-    color: #D9D9D9;
+.contact .contact-form ul li input::placeholder,
+.contact .contact-form ul li textarea::placeholder {
+    color: #D9D9D9 !important;
     font-size: 20px;
     font-family: Days One;
     font-style: normal;
@@ -121,7 +121,7 @@
     padding: 12px 60px;
     border-radius: 15px;
     background-color: #DAE3DB;
-    border: none;
+    border: 2px solid #297C35;
 }
 
 /* Content-mid */
@@ -157,12 +157,14 @@
     position: absolute;
     z-index: 1;
 }
-.content-mid .container .content .email{
+
+.content-mid .container .content .email {
     width: 300px;
     height: 164px;
 }
+
 .content-mid .container .content .phone,
-.content-mid .container .content .store{
+.content-mid .container .content .store {
     width: 300px;
     height: 174px;
 }
@@ -175,24 +177,30 @@
     font-weight: 400;
     line-height: normal;
 }
-.content-mid .content .email{
+
+.content-mid .content .email {
     margin-top: 40px;
     margin-left: 36px;
 }
-.content-mid .content .phone ,
-.content-mid .content .store{
+
+.content-mid .content .phone,
+.content-mid .content .store {
     margin-top: 30px;
     margin-left: 36px;
 }
-.content-mid .content .email h2{
+
+.content-mid .content .email h2 {
     margin: 30px 0 15px 0;
 }
-.content-mid .content .phone h2{
+
+.content-mid .content .phone h2 {
     margin: 20px 0 15px 0;
 }
-.content-mid .content .store h2{
+
+.content-mid .content .store h2 {
     margin: 0 0 15px 0;
 }
+
 .content-mid .content .information p {
     color: #AC7313;
     font-family: Lato;
@@ -202,14 +210,15 @@
     line-height: normal;
     width: 300px;
 }
-.map{
+
+.map {
     max-width: 1152px;
     height: 445px;
     margin: 0 auto 80px auto;
 }
-.map iframe{
+
+.map iframe {
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-

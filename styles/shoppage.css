@@ -97,8 +97,7 @@
 
 
 .our-plant .container,
-.other-product .container
- {
+.other-product .container {
     /* position: relative; */
     width: 1152px;
     display: flex;
@@ -117,8 +116,8 @@
     background-color: #c0d3c4;
 }
 
-.our-plant .title p ,
-.other-product .title p{
+.our-plant .title p,
+.other-product .title p {
     /* width: 412px; */
     color: #567e32;
     font-family: Days One;
@@ -126,21 +125,21 @@
     font-size: 50px;
     line-height: 63.65px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 
-.our-plant .title span ,
+.our-plant .title span,
 .other-product .title span {
     color: black;
 }
 
-.our-plant .listItem{
+.our-plant .listItem {
     width: 1152px;
     height: 767px;
     margin-top: 84px;
 }
-.other-product .listItem{
+
+.other-product .listItem {
     height: 356px;
     width: 1152px;
     margin-top: 84px;
@@ -283,17 +282,20 @@
 }
 
 .our-plant .btn,
-.other-product .btn{
+.other-product .btn {
     width: 1152px;
     display: flex;
     justify-content: center;
 }
-.our-plant .btn{
+
+.our-plant .btn {
     margin: 65px 0px 108px 0px;
 }
-.other-product .btn{
+
+.other-product .btn {
     margin: 81px 0px 124px 0px;
 }
+
 .our-plant .btn button,
 .other-product .btn button {
     width: 262px;

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=David+Libre&family=Days+One&family=Delius&family=Great+Vibes&family=Lato&family=Montserrat&display=swap%27');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #F4F3F3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    border: 1px;
+    background: linear-gradient(0deg, #E9E9E9, #E9E9E9), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    top:0;
+}
+
+.header-mw {
+    display: flex;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-items: center;
+    width: 194px;
+    height: 90px;
+}
+
+.logo .header-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.logo .header-logo_name {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    top: 20px;
+    left: -16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 647px;
+    height: 90px;
+    gap: 40px;
+    margin-left: 119px;
+}
+
+.navbar a {
+    position: relative;
+    font-family: Days One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(161, 163, 154, 1);
+    text-decoration: none;
+    align-items: center;
+}
+
+.navbar-icon {
+    display: flex;
+    position: relative;
+    top: 30px;
+    gap: 34px;
+    margin-left: 102px;
+    width: 95px;
+    height: 30px;
+}
+
+.navbar-icon img {
+    width: 30px;
+    height: 30px;
+    border: 3px;
+}
+
+/* Footer */
+footer {
+    height: 500px;
+    background: rgba(86, 126, 50, 1);
+}
+
+.footer-top {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 372px;
+    height: 352px;
+    margin-bottom: 22.75px;
+}
+
+.footer-top_information {
+    display: flex;
+    align-items: center;
+}
+
+.footer-top-logo {
+    display: flex;
+    justify-items: center;
+    width: auto;
+    height: 90px;
+}
+
+.footer-top .footer-top_information .header-logo {
+    width: 111.14px;
+    height: 94.05px;
+}
+
+.footer-top .footer-top_information .header-logo_name {
+    position: relative;
+    width: 165.69px;
+    height: 60.4px;
+    top: 20px;
+}
+
+.footer-top strong {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-top_icon {
+    display: flex;
+    width: 113.20845794677734px;
+    height: 37px;
+    justify-content: space-between;
+}
+
+.footer-top .footer-top_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 282px;
+    width: 416px;
+}
+
+.footer-center h1,
+.footer-center h2 {
+    margin: 0;
+    color: #fff;
+    font-family: Days One;
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-center h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.footer-center h2 {
+    font-size: 15px;
+}
+
+.footer-center input {
+    width: 361px;
+    height: 83.35px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.footer-center button {
+    width: 361px;
+    height: 72px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-family: Days One;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #297C35;
+}
+
+.footer-center input[placeholder] {
+    text-align: center;
+    font-family: Days One;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #A5A5A5;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    width: 359px;
+    height: 277px;
+}
+
+.footer-right_menu,
+.footer-right_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right_menu h1,
+.footer-right_information h1 {
+    font-family: Days One;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+.footer-right_menu a,
+.footer-right_information a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.footer-desc {
+    display: flex;
+    max-width: 1152px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-desc h3 {
+    color: #ffffff;
+    font-family: Days One;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 40.25px;
+}
+
+.footer-desc_icon {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-top: 17.25px;
+}
+
+

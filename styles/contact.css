@@ -53,7 +53,7 @@
 .container .contact-introduce .introduce p {
     color: #FFF;
     font-size: 15px;
-    font-family: Lato;
+    font-family: Days One;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,6 +94,7 @@
     border-radius: 15px;
     background: #7DAD76;
     border: 2px solid #297C35;
+    color: #D9D9D9;
 }
 
 .contact .contact-form ul li input::placeholder,

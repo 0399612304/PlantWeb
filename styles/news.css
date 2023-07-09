@@ -1,0 +1,360 @@
+.container {
+    display: flex;
+    max-width: 1152px;
+    height: 827px;
+    margin: 102px auto 0 auto;
+    background-color: #f4f3f3;
+}
+
+.left-news {
+    width: 662px;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.news-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 564px;
+    height: 168px;
+    top: 12px;
+}
+
+.title {
+    width: 479px;
+    text-align: center;
+    z-index: 10;
+}
+
+.title p {
+    color: #297c35;
+    text-transform: uppercase;
+    font-family: Days One;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50.92px;
+}
+
+.title p span {
+    color: #403d38;
+}
+
+.title p span:nth-child(2) {
+    color: #567e32;
+}
+
+.rec-white {
+    position: absolute;
+    width: 550px;
+    height: 143px;
+    border: 3px solid #297c35;
+    background-color: #ffffff;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.rec-green {
+    position: absolute;
+    width: 550px;
+    height: 143px;
+    background: #c0d3c480;
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.best-news {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 662px;
+    height: 201px;
+    top: 41px;
+}
+
+.best-news img {
+    width: 327px;
+    height: 200.332px;
+    object-fit: cover;
+}
+
+.best-one {
+    position: relative;
+    width: 327px;
+    height: 201px;
+}
+
+.best-two {
+    position: relative;
+    width: 327px;
+    height: 201px;
+}
+
+.best-img {
+    width: 327px;
+    height: 201px;
+}
+
+.best-text {
+    width: 327px;
+    height: 82px;
+    background-color: #e7eddd;
+    position: absolute;
+    bottom: 0px;
+}
+
+.best-text p {
+    font-family: David Libre;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #297c35;
+    margin-top: 13px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.main-news {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 662px;
+    height: 384px;
+    top: 58px;
+    background-color: #f4f3f3;
+}
+
+.list-news {
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+    height: 384px;
+}
+.list-news li {
+    list-style-type: none;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.list-news .content-new .index p{
+    color: #000;
+font-family: Dongle;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.content-new {
+    display: flex;
+    width: 427px;
+    height: 68px;
+    border-bottom: 2px solid #e7eddd;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 68px;
+    margin: 0;
+    background-color: #e7eddd;
+}
+
+.index p {
+    font-family: Dongle;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36.2px;
+}
+
+.detail-new {
+    width: 353px;
+    height: 68px;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 0px;
+    background-color: #ffffff;
+}
+
+.detail-new p {
+    font-family: David Libre;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.view-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 427px;
+    height: 41px;
+    background-color: #c0d3c480;
+}
+
+.view-more a {
+    color: #297C35;
+    font-family: David Libre;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-right: 14px;
+}
+
+.slide-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 226px;
+    height: 384px;
+    padding-top: 5px;
+    border: 2px solid #297c35;
+    background-color: #f3f8ea;
+}
+
+.slide-img {
+    width: 211.55px;
+    height: 298.3px;
+    
+}
+.slide-img .contact-mySlides{
+    display: none;
+}
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #297C35;
+}
+
+.text-event {
+    width: 226px;
+    height: 32px;
+    text-align: center;
+}
+
+.text-event p {
+    font-family: Alice;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #567e32;
+    padding-top: 18px;
+}
+
+.text-event span {
+    text-transform: uppercase;
+    color: #5d5e5c;
+}
+
+.right-news {
+    width: 466px;
+    height: 838px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 24px;
+  }
+  
+  .bonsai {
+    position: relative;
+    width: 269px;
+    height: 345px;
+    /* top: 25px; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .elipse-top {
+    width: 248.3px;
+    height: 241px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #c84848 0%, rgba(200, 72, 72, 0) 100%);
+  }
+  
+  .bonsai-img {
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    z-index: 10;
+  }
+  .elipse-bot {
+    position: absolute;
+    width: 233.5px;
+    height: 41.65px;
+    bottom: 0px;
+    background: rgba(217, 217, 217, 1);
+    box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .side-news {
+    width: 419px;
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .news {
+    position: relative;
+    width: 416px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  .news img{
+    object-fit: cover;
+  }
+  
+  #size-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  #news-text {
+    font-family: David Libre;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 11px 0 15px;
+  }
+  #author {
+    position: absolute;
+    width: 125px;
+    height: 14px;
+    right: 10px;
+    bottom: 0;
+    font-family: David Libre;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgba(41, 124, 53, 1);
+    margin-right: 16px;
+    margin-bottom: 11px;
+  }

@@ -7,11 +7,13 @@
 .container .contact-introduce {
     display: flex;
     position: relative;
+    width: 560px;
+    height: 520px;
 }
 
 .container .contact-introduce .background img {
-    width: 560px;
-    height: 520px;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-mySlides {
@@ -97,9 +99,20 @@
     color: #D9D9D9;
 }
 
+.contact .contact-form ul li input:focus,
+.contact .contact-form ul li textarea:focus {
+    background-color: #F4F3F3;
+    color: #297C35;
+}
+
+/* .contact .contact-form ul li input[placeholder]:focus,
+.contact .contact-form ul li textarea::placeholder:focus {
+    color: #297C35 !important;
+} */
+
 .contact .contact-form ul li input::placeholder,
 .contact .contact-form ul li textarea::placeholder {
-    color: #D9D9D9 !important;
+    color: #D9D9D9;
     font-size: 20px;
     font-family: Days One;
     font-style: normal;
@@ -222,4 +235,34 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+        max-width: 688px;
+        margin: 130px auto 0 auto;
+    }
+
+    .content-mid .container {
+        flex-direction: column;
+    }
+
+    .container .contact-introduce {
+        width: 688px;
+    }
+
+    .container .contact-introduce .background img {
+        width: 688px;
+    }
+
+    .container .contact-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .contact-introduce .introduce {
+        width: 426.95px;
+        height: 308.34px;
+    }
 }

@@ -2,13 +2,14 @@
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
     background-color: #F4F3F3;
+    overflow-x: hidden;
 }
 
 * {
@@ -272,7 +273,7 @@ footer {
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
     margin: 0;
 
@@ -320,7 +321,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .footer {
         height: 600px;
-       
+
     }
 
     .footer-top {
@@ -426,25 +427,36 @@ footer {
     .footer-right .footer-right_information {
         display: none;
     }
-    .footer-right .footer-right_menu h1{
+
+    .footer-right .footer-right_menu h1 {
         font-size: 20px;
         padding-right: 80px;
     }
+
     .footer-desc {
         margin-left: 43px;
         margin-right: 35px;
         align-items: center;
     }
+
     .footer-desc h3 {
         font-size: 13px;
         margin: 0;
     }
+
     .footer-desc_icon {
         margin: 0;
         align-items: center;
     }
-    .footer-desc_icon img{
+
+    .footer-desc_icon img {
         width: 40px;
         height: 27.776px;
+    }
+    .navbar-icon{
+        display: none;
+    }
+    .navbar{
+        display: none;
     }
 }

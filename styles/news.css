@@ -323,6 +323,9 @@ text-transform: uppercase;
     background-color: #ffffff;
     border-radius: 20px;
   }
+  .side-news :hover{
+    background: linear-gradient(100deg, rgba(233, 255, 216, 0.25) 0%, #599a3a 0.01%, #fff 46.95%);
+  }
   .news img{
     object-fit: cover;
   }

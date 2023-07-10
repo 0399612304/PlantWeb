@@ -56,7 +56,7 @@ header {
     background: linear-gradient(0deg, #E9E9E9, #E9E9E9), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 9999;
-    top:0;
+    top: 0;
 }
 
 .header-mw {
@@ -317,3 +317,134 @@ footer {
     margin-top: 17.25px;
 }
 
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 600px;
+       
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding-top: 20px;
+        margin-left: 43px;
+        margin-right: 35px;
+    }
+
+    .footer-left {
+        width: 100%;
+        height: 187.551px;
+        margin-bottom: 30.29px;
+        border-bottom: 3px solid #fff;
+    }
+
+    .footer-top .footer-top_information .header-logo {
+        width: 77.845px;
+        height: 66.825px;
+    }
+
+    .footer-top .footer-top_information .header-logo_name {
+        width: 132px;
+        height: 55.687px;
+        top: 12px;
+    }
+
+    .footer-top .footer-left strong {
+        line-height: normal;
+    }
+
+    .footer-top .footer-left .footer-top_icon {
+        width: 141.573px;
+        height: 42.551px;
+    }
+
+    .footer-top .footer-left .footer-top_icon img {
+        height: 39px;
+        width: 39px;
+    }
+
+
+    .footer-center {
+        flex-direction: row;
+        width: 100%;
+        height: 82.491px;
+        margin-top: 27.71px;
+        margin-bottom: 29.91px;
+        border-bottom: 3px solid #fff;
+        justify-content: unset;
+    }
+
+    .footer-center h1 {
+        font-size: 20px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .footer-center h2 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .footer-center .join-us {
+        width: 165px;
+        height: 82.491px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 3px;
+    }
+
+    .footer-center input {
+        width: 334px;
+        height: 54.39px;
+        margin-right: 24px;
+    }
+
+    .footer-center button {
+        width: 157px;
+        height: 54.39px;
+    }
+
+    .footer-center button,
+    .footer-center input[placeholder] {
+        font-size: 15px;
+    }
+
+    .footer-right {
+        width: 100%;
+        height: 42.091px;
+        margin: 31.12px 0 39.36px 0;
+    }
+
+    .footer-right .footer-right_menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .footer-right .footer-right_information {
+        display: none;
+    }
+    .footer-right .footer-right_menu h1{
+        font-size: 20px;
+        padding-right: 80px;
+    }
+    .footer-desc {
+        margin-left: 43px;
+        margin-right: 35px;
+        align-items: center;
+    }
+    .footer-desc h3 {
+        font-size: 13px;
+        margin: 0;
+    }
+    .footer-desc_icon {
+        margin: 0;
+        align-items: center;
+    }
+    .footer-desc_icon img{
+        width: 40px;
+        height: 27.776px;
+    }
+}

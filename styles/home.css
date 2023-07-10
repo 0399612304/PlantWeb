@@ -33,7 +33,6 @@
     line-height: 76px;
     letter-spacing: 0em;
     text-align: left;
-    padding-right: 30px;
 }
 
 .common-content .content-right h1 span {
@@ -74,16 +73,15 @@
     max-width: 1152px;
     margin: 0 auto 91px auto;
     background-color: #DAE3DB;
+    height: 900px;
 }
 
 .main-feedback img {
     width: 366px;
-    height: 900px;
 }
 
 .main-feedback .content-slider {
     width: 786px;
-    height: 900px;
     padding: 10px 30px 10px 0;
 }
 
@@ -238,7 +236,6 @@
 }
 
 .main-selling .selling-plant .plant-list {
-    display: flex;
     position: relative;
 }
 
@@ -285,7 +282,7 @@
 .main-selling .plant-list .plant-img {
     position: absolute;
     z-index: 1;
-    top: -206px;
+    bottom: 0;
 }
 
 .main-selling .plant-list .plant-img img {
@@ -301,4 +298,157 @@
 .main-selling .plant-list .plant-img_short img {
     width: 140px;
     height: 145px;
+}
+
+@media only screen and (max-width: 768px) {
+    .common-content {
+        flex-direction: column-reverse;
+        max-width: 570px;
+        margin: 0 auto;
+        padding-top: 49px;
+    }
+
+    .common-content .content-right h1 {
+        margin: 0;
+        font-size: 45px;
+        text-align: center;
+        line-height: normal;
+        margin-bottom: 47px;
+    }
+
+    .common-content .content-right strong {
+        font-size: 21px;
+        line-height: normal;
+    }
+
+    .common-content .content-right button {
+        display: none;
+    }
+
+    .common-content .content-right {
+        padding-top: 30.5px;
+        height: auto;
+    }
+
+    .main-selling {
+        max-width: 691px;
+        height: 411px;
+        margin: 72px 37px 75px 40px;
+        justify-content: unset;
+    }
+
+    .main-selling .selling-title {
+        width: 100%;
+        height: 65px;
+    }
+
+    .main-selling .selling-title h1 {
+        font-size: 30px;
+    }
+
+    .main-selling .selling-plant {
+        width: 100%;
+        height: 333px;
+        padding: 0;
+        gap: 27px;
+    }
+
+    .main-selling .plant-list .plant-img {
+        bottom: 0;
+        left: -15px;
+    }
+
+    .main-selling .plant-list .plant-img img {
+        width: 102px;
+        height: 260px;
+    }
+
+    .main-selling .none {
+        display: none;
+    }
+
+    .main-selling .plant-list .plant-content {
+        width: 200px;
+        height: 104px;
+    }
+
+    .main-selling .plant-list .plant-img_short img {
+        width: 118.653px;
+        height: 125.431px;
+    }
+
+    .main-selling .plant-list .plant-img_short {
+        bottom: -3px;
+        left: -15px;
+    }
+
+    .main-selling .plant-list .plant-content .tittle,
+    .main-selling .plant-list .plant-content .total {
+        font-size: 12px;
+    }
+
+    .main-feedback {
+        max-width: 686px;
+        margin: 0 auto 41.78px auto;
+        height: 420.216px;
+    }
+
+    .main-feedback .content-slider {
+        padding: 0;
+    }
+
+    .main-feedback .content-slider h1 {
+        font-size: 30px;
+        padding-top: 18.21px;
+        padding-left: 68.32px;
+        text-align: left;
+    }
+
+    .main-feedback .content-slider .custom_slider {
+        margin: 30px 0 0 104px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider {
+        width: 250px;
+        height: 181.703px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider-container .customer {
+        width: 80px;
+        height: 76.507px;
+        left: 155px;
+        top: 22px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider span {
+        font-size: 10px;
+        margin: 13.39px 15px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider .star {
+        width: 79.602px;
+        height: 11.476px;
+        margin-top: 13.39px;
+        margin-left: 18px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider .star img {
+        width: 8.72px;
+        height: 11.48px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider h2 {
+        margin: 0;
+        font-size: 15px;
+        padding-left: 14px;
+    }
+
+    .main-feedback .content-slider .custom_slider .slider-container {
+        height: 219px;
+        width: 250px;
+    }
+    .main-feedback .content-slider .btn-next-pr{
+        display: none;
+    }
+
 }

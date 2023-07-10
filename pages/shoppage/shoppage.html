@@ -9,33 +9,102 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="header-mw">
-        <div class="logo">
-          <img
-            class="header-logo"
-            alt="logo-header"
-            src="../../assets/logo/logo.png"
-          />
-          <img
-            class="header-logo_name"
-            alt="logo-name-header"
-            src="../../assets/logo/logo-name.png"
-          />
-        </div>
-        <div class="navbar">
-          <a href="/index.html">Home</a>
-          <a href="/pages/aboutpage/aboutpage.html">About Us</a>
-          <a href="/pages/shoppage/shoppage.html">Products</a>
-          <a href="/pages/newspage/newspage.html">News</a>
-          <a href="/pages/contactpage/contactpage.html">Contact Us</a>
-        </div>
-        <div class="navbar-icon">
-          <img src="../../assets/icon/cart.png" alt="navbar-icon_cart" />
-          <img src="../../assets//icon/User.png" alt="navbar-icon_user" />
-        </div>
-      </div>
-    </header>
+    <header>
+			<div class="menu__desktop container">
+				<a class="logo" title="Planttify" href="#">
+					<img title="Planttify" src="/assets/logo/logo-removebg-preview.png" alt="Planttify">
+				</a>
+				<nav>
+					<ul class="navbar--items">
+						<li><a title="Visit Homepage" href="/index.html">Home</a></li>
+						<li>
+							<a title="Visit About us page" href="/pages/aboutpage/aboutpage.html"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit Products page" href="/pages/shoppage/shoppage.html"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="/pages/newspage/newspage.html">News</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="/pages/contactpage/contactpage.html"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="icons">
+					<a title="Shop cart" href="./pages/develop.html">
+						<img
+							class="icon--cart"
+							src="/assets/Icon/group.png"
+							alt="cart-icon"
+						/>
+					</a>
+					<a title="User info" href="./pages/develop.html">
+						<img
+							class="icon--user"
+							src="/assets/Icon/User.png"
+							alt="user-icon"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="menu__mobile">
+				<div class="container">
+					<div class="logo--wrapper">
+						<a class="logo" title="Planttify" href="#">
+							<img
+								src="/assets/logo/logo-removebg-preview.png"
+								alt="icon"
+							/>
+						</a>
+						<div class="menu--button">
+							<span class="line__white"></span>
+							<span class="line__white"></span>
+							<span class="line__white"></span>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a title="Visit Homepage" href="#">Home</a></li>
+						<li>
+							<a title="Visit About us page" href="./pages/about-us.html"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit Products page" href="./pages/products.html"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="./pages/news.html">News</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="./pages/contact-us.html"
+								>Contact Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="./pages/develop.html">My Cart</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="./pages/develop.html"
+								>My Account</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header> 
     <!-- Main -->
     <main>
       <!-- section Notification -->
@@ -590,5 +659,6 @@
         </div>
       </div>
     </footer>
+    <script src="../../javascript/main.js"></script>
   </body>
 </html>

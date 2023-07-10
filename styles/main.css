@@ -48,8 +48,15 @@ img {
     max-width: 100%;
 }
 
+.container {
+    width: 100%;
+    max-width: 1192px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 /* HEADER */
-header {
+/* header {
     position: fixed;
     width: 100%;
     height: 90px;
@@ -60,22 +67,15 @@ header {
     top: 0;
 }
 
-.header-mw {
+.header-container {
     display: flex;
-    max-width: 1152px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    justify-items: center;
-    width: 194px;
     height: 90px;
-}
-
-.logo .header-logo {
-    width: 90px;
-    height: 90px;
+    padding: 10px 0;
 }
 
 .logo .header-logo_name {
@@ -93,7 +93,6 @@ header {
     width: 647px;
     height: 90px;
     gap: 40px;
-    margin-left: 119px;
 }
 
 .navbar a {
@@ -112,17 +111,183 @@ header {
 .navbar-icon {
     display: flex;
     position: relative;
-    top: 30px;
     gap: 34px;
-    margin-left: 102px;
-    width: 95px;
-    height: 30px;
 }
 
 .navbar-icon img {
     width: 30px;
     height: 30px;
     border: 3px;
+} */
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #e9e9e9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        background-color: var(--primary-color);
+        height: 80px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.menu__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__desktop .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__desktop .logo img {
+    height: 80px;
+}
+
+.menu__desktop .navbar--items {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.menu__desktop .navbar--items a {
+    color: #a1a39a;
+}
+
+.menu__desktop .navbar--items a:hover {
+    color: #5d5e5c;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+    .menu__desktop .navbar--items {
+        font-size: 1.8vw;
+        gap: 1.8vw;
+    }
+}
+
+.menu__mobile {
+    width: 100%;
+}
+
+.menu__mobile:not(.active) {
+    justify-content: center;
+}
+
+.menu__mobile:not(.active) .logo--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__mobile:not(.active) .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.menu__mobile:not(.active) .logo img {
+    height: 70px;
+}
+
+.menu__mobile:not(.active) .menu--button {
+    justify-content: space-between;
+    padding-block: 23px;
+}
+
+.menu__mobile:not(.active) nav {
+    display: none;
+}
+
+.menu__mobile.active .logo--wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__mobile.active .logo {
+    display: none;
+}
+
+.menu__mobile.active .menu--button {
+    justify-content: center;
+    padding-block: unset;
+}
+
+.menu__mobile.active span.line__white:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 0px);
+}
+
+.menu__mobile.active span.line__white:nth-child(2) {
+    display: none;
+}
+
+.menu__mobile.active span.line__white:nth-child(3) {
+    transform: rotate(45deg) translate(-2px, 0px);
+}
+
+.menu__mobile.active nav {
+    background-color: var(--tertiary-color);
+    -webkit-padding-after: 40px;
+    padding-block-end: 40px;
+    height: calc(100vh - 80px);
+    width: 100vw;
+}
+
+.menu__mobile.active nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu__mobile.active nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.menu__mobile .menu--button {
+    aspect-ratio: 1/1;
+    height: 80px;
+    padding-inline: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__mobile .menu--button span.line__white {
+    height: 4px;
+    background-color: var(--white-color);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 95px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Footer */
@@ -132,25 +297,24 @@ footer {
 }
 
 .footer-top {
-    max-width: 1152px;
-    margin: 0 auto;
     padding-top: 30px;
     display: flex;
+    width: 100%;
     border-bottom: 3px solid #FFFFFF;
+    justify-content: space-between;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 372px;
-    height: 352px;
-    margin-bottom: 22.75px;
+    width: calc(100% / 3 - 24px);
 }
 
 .footer-top_information {
     display: flex;
     align-items: center;
+    margin-bottom: 36px;
 }
 
 .footer-top-logo {
@@ -161,8 +325,7 @@ footer {
 }
 
 .footer-top .footer-top_information .header-logo {
-    width: 111.14px;
-    height: 94.05px;
+    height: 90px;
 }
 
 .footer-top .footer-top_information .header-logo_name {
@@ -172,13 +335,14 @@ footer {
     top: 20px;
 }
 
-.footer-top strong {
+.footer-top p {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
+    margin-bottom: 38px;
 }
 
 .footer-top_icon {
@@ -196,10 +360,12 @@ footer {
 .footer-center {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    height: 282px;
-    width: 416px;
+    width: calc(100% / 3 - 24px);
+}
+
+.footer-center .join-us {
+    margin-bottom: 28px;
 }
 
 .footer-center h1,
@@ -221,16 +387,17 @@ footer {
 }
 
 .footer-center input {
-    width: 361px;
-    height: 83.35px;
     border-radius: 40px;
     background-color: #FFFFFF;
     border: none;
+    padding: 26px 25px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .footer-center button {
-    width: 361px;
-    height: 72px;
+    padding: 26px 25px;
+    width: 100%;
     border-radius: 50px;
     border: none;
     text-align: center;
@@ -255,7 +422,7 @@ footer {
 .footer-right {
     display: flex;
     justify-content: space-between;
-    width: 359px;
+    width: calc(100% / 3 - 24px);
     height: 277px;
 }
 
@@ -263,7 +430,22 @@ footer {
 .footer-right_information {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.footer-right_menu ul li,
+.footer-right_information ul li {
+    list-style: none;
+
+}
+
+.footer-right_menu ul li a,
+.footer-right_information ul li a {
+    margin: 0;
+}
+
+.footer-right_menu ul li:not(:last-child),
+.footer-right_information ul li:not(:last-child) {
+    margin-bottom: 23px;
 }
 
 .footer-right_menu h1,
@@ -275,7 +457,7 @@ footer {
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0 0 33px 0;
 
 }
 
@@ -293,7 +475,6 @@ footer {
 
 .footer-desc {
     display: flex;
-    max-width: 1152px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -333,8 +514,6 @@ footer {
 
     .footer-left {
         width: 100%;
-        height: 187.551px;
-        margin-bottom: 30.29px;
         border-bottom: 3px solid #fff;
     }
 
@@ -349,13 +528,15 @@ footer {
         top: 12px;
     }
 
-    .footer-top .footer-left strong {
+    .footer-top .footer-left p {
         line-height: normal;
     }
 
     .footer-top .footer-left .footer-top_icon {
-        width: 141.573px;
-        height: 42.551px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 11px;
     }
 
     .footer-top .footer-left .footer-top_icon img {
@@ -367,7 +548,6 @@ footer {
     .footer-center {
         flex-direction: row;
         width: 100%;
-        height: 82.491px;
         margin-top: 27.71px;
         margin-bottom: 29.91px;
         border-bottom: 3px solid #fff;
@@ -386,19 +566,12 @@ footer {
     }
 
     .footer-center .join-us {
-        width: 165px;
-        height: 82.491px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 3px;
+        margin-bottom: 28px;
     }
 
-    .footer-center input {
-        width: 334px;
-        height: 54.39px;
-        margin-right: 24px;
-    }
 
     .footer-center button {
         width: 157px;
@@ -452,11 +625,5 @@ footer {
     .footer-desc_icon img {
         width: 40px;
         height: 27.776px;
-    }
-    .navbar-icon{
-        display: none;
-    }
-    .navbar{
-        display: none;
     }
 }

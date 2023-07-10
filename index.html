@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="header-mw">
+    <!-- <header>
+      <div class="container header-container">
         <div class="logo">
           <img
             class="header-logo"
             alt="logo-header"
-            src="./assets/logo/logo.png"
-          />
-          <img
-            class="header-logo_name"
-            alt="logo-name-header"
-            src="./assets/logo/logo-name.png"
+            src="./assets/logo/logo-removebg-preview.png"
           />
         </div>
         <div class="navbar" id="myTopnav">
@@ -37,13 +35,115 @@
           <img src="./assets//icon/User.png" alt="navbar-icon_user" />
         </div>
       </div>
-    </header>
+    </header> -->
+
+    <header>
+			<div class="menu__desktop container">
+				<a class="logo" title="Planttify" href="#">
+					<img title="Planttify" src="/assets/logo/logo-removebg-preview.png" alt="Planttify">
+				</a>
+				<nav>
+					<ul class="navbar--items">
+						<li><a title="Visit Homepage" href="#">Home</a></li>
+						<li>
+							<a title="Visit About us page" href="./pages/aboutpage/aboutpage.html"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit Products page" href="./pages/shoppage/shoppage.html"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="./pages/newspage/newspage.html">News</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="./pages/contactpage/contactpage.html"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="icons">
+					<a title="Shop cart" href="./pages/develop.html">
+						<img
+							class="icon--cart"
+							src="/assets/Icon/group.png"
+							alt="cart-icon"
+						/>
+					</a>
+					<a title="User info" href="./pages/develop.html">
+						<img
+							class="icon--user"
+							src="/assets/Icon/User.png"
+							alt="user-icon"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="menu__mobile">
+				<div class="container">
+					<div class="logo--wrapper">
+						<a class="logo" title="Planttify" href="#">
+							<img
+								src="/assets/logo/logo-removebg-preview.png"
+								alt="icon"
+							/>
+						</a>
+						<div class="menu--button">
+							<span class="line__white"></span>
+							<span class="line__white"></span>
+							<span class="line__white"></span>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a title="Visit Homepage" href="#">Home</a></li>
+						<li>
+							<a title="Visit About us page" href="./pages/about-us.html"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit Products page" href="./pages/products.html"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="./pages/news.html">News</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="./pages/contact-us.html"
+								>Contact Us</a
+							>
+						</li>
+						<li>
+							<a title="Visit News page" href="./pages/develop.html">My Cart</a>
+						</li>
+						<li>
+							<a title="Visit Contact us page" href="./pages/develop.html"
+								>My Account</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+    
     <!-- Main -->
     <main>
       <section class="main-common">
         <div class="common-content">
           <div class="content-right">
-            <h1>“Grow <span>plants</span><br> for <span>a better life</span>“</h1>
+            <h1>
+              “Grow <span>plants</span><br />
+              for <span>a better life</span>“
+            </h1>
             <strong
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -58,6 +158,7 @@
         </div>
       </section>
       <section class="main-selling">
+       <div class="container">
         <div class="selling-title">
           <h1>BEST SELLING <span>PLANTS</span></h1>
         </div>
@@ -93,7 +194,7 @@
             </div>
           </div>
           <div class="plant-list none">
-            <div class="plant-img_short ">
+            <div class="plant-img_short">
               <img
                 src="./assets/products/pothos_plant_fcp49_1.png"
                 alt="img-plant_4"
@@ -106,6 +207,7 @@
             </div>
           </div>
         </div>
+       </div>
       </section>
       <section class="main-feedback">
         <div class="content-slider">
@@ -215,74 +317,84 @@
         <img src="./assets/Rectangle_15.png" alt="background-feedback" />
       </section>
     </main>
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-left">
-          <div class="footer-top_information">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <div class="footer-top_information">
+              <img
+                class="header-logo"
+                alt="logo-header"
+                src="./assets/logo/logo.png"
+              />
+              <img
+                class="header-logo_name"
+                alt="logo-name-header"
+                src="./assets/logo/logo-name.png"
+              />
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="footer-top_icon">
+              <img src="./assets/icon/instagram.png" alt="footer-instagram" />
+              <img src="./assets/icon/twitter-sign.png" alt="footer-twitter" />
+              <img src="./assets/icon/facebook.png" alt="footer-facebook" />
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="join-us">
+              <h1>JOIN US</h1>
+              <h2>and get 10% discount</h2>
+            </div>
+            <input type="email" name="email" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+          <div class="footer-right">
+            <div class="footer-right_menu">
+              <h1>MENU</h1>
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/aboutpage/aboutpage.html">About Us</a></li>
+                <li><a href="/pages/shoppage/shoppage.html">Shop</a></li>
+                <li><a href="/pages/newspage/newspage.html">News</a></li>
+                <li>
+                  <a href="/pages/contactpage/contactpage.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-right_information">
+              <h1>INFORMATION</h1>
+              <ul>
+                <li><a href="/pages/aboutpage/aboutpage.html">About Us</a></li>
+                <li><a href="/user">User’s Guide</a></li>
+                <li><a href="/terms">Terms & Conditions</a></li>
+                <li><a href="/support">Support Center</a></li>
+                <li><a href="/store">Store Information</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <h3>2023 - All rights reserved</h3>
+          <div class="footer-desc_icon">
+            <img src="./assets/icon/paypal.png" alt="footer-icon_paypal" />
             <img
-              class="header-logo"
-              alt="logo-header"
-              src="./assets/logo/logo.png"
+              src="./assets/icon/mastercard.png"
+              alt="footer-icon_mastercard"
             />
-            <img
-              class="header-logo_name"
-              alt="logo-name-header"
-              src="./assets/logo/logo-name.png"
-            />
+            <img src="./assets/icon/visa.png" alt="footer-icon_visa" />
           </div>
-          <strong>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </strong>
-          <div class="footer-top_icon">
-            <img src="./assets/icon/instagram.png" alt="footer-instagram" />
-            <img src="./assets/icon/twitter-sign.png" alt="footer-twitter" />
-            <img src="./assets/icon/facebook.png" alt="footer-facebook" />
-          </div>
-        </div>
-        <div class="footer-center">
-          <div class="join-us">
-            <h1>JOIN US</h1>
-            <h2>and get 10% discount</h2>
-          </div>
-          <input type="email" name="email" placeholder="Enter your email" />
-          <button>SUBSCRIBE</button>
-        </div>
-        <div class="footer-right">
-          <div class="footer-right_menu">
-            <h1>MENU</h1>
-            <a href="/index.html">Home</a>
-            <a href="/pages/aboutpage/aboutpage.html">About Us</a>
-            <a href="/pages/shoppage/shoppage.html">Shop</a>
-            <a href="/pages/newspage/newspage.html">News</a>
-            <a href="/pages/contactpage/contactpage.html">Contact Us</a>
-          </div>
-          <div class="footer-right_information">
-            <h1>INFORMATION</h1>
-            <a href="/pages/aboutpage/aboutpage.html">About Us</a>
-            <a href="/user">User’s Guide</a>
-            <a href="/terms">Terms & Conditions</a>
-            <a href="/support">Support Center</a>
-            <a href="/store">Store Information</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-desc">
-        <h3>2023 - All rights reserved</h3>
-        <div class="footer-desc_icon">
-          <img src="./assets/icon/paypal.png" alt="footer-icon_paypal" />
-          <img
-            src="./assets/icon/mastercard.png"
-            alt="footer-icon_mastercard"
-          />
-          <img src="./assets/icon/visa.png" alt="footer-icon_visa" />
         </div>
       </div>
     </footer>
     <script src="./javascript/home.js"></script>
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
-

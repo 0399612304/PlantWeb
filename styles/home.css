@@ -192,137 +192,155 @@
     background-color: #567E32;
 }
 
-.main-selling {
-    height: 632px;
-    margin: 100px auto;
+.plants-container {
+    margin-bottom: 100px;
+}
+
+.plants-group {
+    --f-columns: 4;
+    --f-gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--f-gap));
+    margin-bottom: calc(-1 * var(--f-gap));
+}
+
+.plants-group>* {
+    margin-left: var(--f-gap);
+    margin-bottom: var(--f-gap);
+    width: calc((100% / var(--f-columns) - var(--f-gap)));
+    aspect-ratio: 3/4;
+}
+
+@media screen and (max-width: 768px) {
+    .plants-group {
+        --f-columns: 3;
+        --f-gap: 20px;
+    }
+}
+
+.plants-group .plants-image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.plants-group .plants-item {
+    position: relative;
+}
+
+.plants-item .plants-item__overlay {
+    position: absolute;
+    z-index: -1;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    transition: all 0.25s linear;
+}
+
+.plants-item button {
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.25s linear;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #567E32;
+    font-size: 13px;
+    border-radius: 15px;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+}
+
+.plants-item button {
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.25s linear;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #567E32;
+    font-size: 13px;
+    border-radius: 15px;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+}
+
+.plants-item .text-group {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    bottom: 0;
+    right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 45%;
+    padding: 10px 0;
+    overflow: hidden;
+    transition: all 0.25s linear;
 }
 
-.main-selling .selling-title {
-    border-radius: 15px;
-    background: rgba(192, 211, 196, 0.50);
-    width: 1152px;
-    height: 125.084px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-selling .selling-title h1 {
-    margin: 0;
-    color: #403D38;
-    text-align: center;
-    font-size: 50px;
-    font-family: Days One;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.main-selling .selling-title h1 span {
-    color: #567E32;
-}
-
-.main-selling .selling-plant {
-    display: flex;
-    gap: 24px;
-    align-items: end;
-    margin-top: 42px;
-}
-
-.main-selling .selling-plant .plant-list {
-    position: relative;
-}
-
-.main-selling .plant-list .plant-content {
-    position: relative;
-    height: 145px;
-    width: 264px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-around;
-    padding-right: 9.79px;
-    border-radius: 20px;
-    background-color: #D9D9D9;
-}
-
-.main-selling .selling-plant  {
-    width: 100%;
-    height: 465px;
-    display: grid;
-    justify-content: flex-start;
-    /* grid-auto-columns: 90%; */
-    grid-auto-flow: column;
-    /* grid-gap: 1.5rem; */
-    overflow: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    -webkit-overflow-scrolling: touch;
-    /* scroll-padding: 1rem; */
-    grid-template-columns: unset;
-}
-.main-selling .selling-plant::-webkit-scrollbar {
-  display: none;
-  width: 0;
-}
-.main-selling .selling-plant > *{
-  scroll-snap-align: start;
-}
-
-.main-selling .plant-list .plant-content img {
-    width: 20px;
-    height: 20px;
-}
-
-.main-selling .plant-list .plant-content .tittle {
-    color: #000;
-    font-size: 15px;
-    font-family: Days One;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.main-selling .plant-list .plant-content .end {
-    text-align: end;
-}
-
-.main-selling .plant-list .plant-content .total {
-    color: #000;
+.text-group .icon-custom {
+    color: #fff;
     font-size: 20px;
-    font-family: Days One;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
-.main-selling .plant-list .plant-img {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
+.text-group .name {
+    font-size: 15px;
+    color: #000;
+    text-align: right;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
-.main-selling .plant-list .plant-img img {
-    width: 140px;
-    height: 350px;
+.text-group .price {
+    font-size: 20px;
+    color: #000;
+    text-align: right;
 }
 
-.main-selling .plant-list .plant-img_short {
-    position: absolute;
-    z-index: 1;
+.plants-item:hover button {
+    bottom: 10px;
 }
 
-.main-selling .plant-list .plant-img_short img {
-    width: 140px;
-    height: 145px;
+.plants-item:hover .plants-item__overlay {
+    background-color: #537E2E;
+    height: 50%;
 }
 
+.plants-item:hover .text-group {
+    padding-bottom: 50px;
+    height: 50%;
+    color: #fff;
+}
+
+.plants-item:hover .text-group .name {
+    font-size: 15px;
+    color: #fff;
+}
+
+.plants-item:hover .text-group .price {
+    font-size: 20px;
+    color: #fff;
+    text-align: right;
+}
+.plants-item .plants-image img{
+    transition: all 0.25s linear;
+}
+.plants-item:hover .plants-image img {
+    transform: scale(1.1) translateY(-0.5vw);
+}
 @media only screen and (max-width: 768px) {
     .common-content {
         flex-direction: column-reverse;

@@ -153,6 +153,14 @@
     height: 330px;
 }
 
+.content-mid .container .bbt {
+    border-bottom: 4px solid #297C35;
+}
+
+.content-mid .container .btp {
+    border-top: 4px solid #297C35;
+}
+
 .content-mid .container .content .information {
     position: relative;
     display: flex;
@@ -165,6 +173,7 @@
     width: 366px;
     height: 330px;
     object-fit: cover;
+    opacity: 0.6;
 }
 
 .content-mid .container .content .information {

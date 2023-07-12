@@ -81,9 +81,11 @@
     width: 253px;
     padding: 12px 10px 12px 20px;
     border-radius: 15px;
-    background-color: #7DAD76;
-    border: 2px solid #297C35;
+    background: linear-gradient(#7DAD76, #7DAD76) padding-box,
+      linear-gradient(180deg,#ffffff,#397C35) border-box;
+    border: 3px solid transparent;
     color: #D9D9D9;
+    font-size: 20px;
 }
 
 .contact .contact-form ul li textarea {
@@ -91,9 +93,11 @@
     height: 205px;
     padding: 12px 10px 12px 20px;
     border-radius: 15px;
-    background: #7DAD76;
-    border: 2px solid #297C35;
+    background: linear-gradient(#7DAD76, #7DAD76) padding-box,
+      linear-gradient(180deg,#ffffff,#397C35) border-box;
+    border: 3px solid transparent;
     color: #D9D9D9;
+    font-size: 20px;
 }
 
 .contact .contact-form ul li input:focus,
@@ -102,10 +106,6 @@
     color: #297C35;
 }
 
-/* .contact .contact-form ul li input[placeholder]:focus,
-.contact .contact-form ul li textarea::placeholder:focus {
-    color: #297C35 !important;
-} */
 
 .contact .contact-form ul li input::placeholder,
 .contact .contact-form ul li textarea::placeholder {
@@ -132,8 +132,13 @@
     line-height: normal;
     padding: 12px 60px;
     border-radius: 15px;
-    background-color: #DAE3DB;
-    border: 2px solid #297C35;
+    background: linear-gradient(#DAE3DB, #DAE3DB) padding-box,
+    linear-gradient(-90deg,#ffffff,#397C35) border-box;
+    border: 2px solid transparent;
+}
+.contact .contact-form .btn-submit button:hover{
+    background: linear-gradient(#DAE3DB, #DAE3DB) padding-box,
+    linear-gradient(90deg,#ffffff,#397C35) border-box;
 }
 
 /* Content-mid */

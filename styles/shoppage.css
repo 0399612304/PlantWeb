@@ -69,6 +69,9 @@
     font-weight: 400;
     text-align: center;
 }
+.notification .content-center .btn-shop button:hover{
+    background-color: #789D5C;
+}
 
 .notification .content-right {
     position: relative;
@@ -292,6 +295,20 @@
     font-weight: 400;
     line-height: normal;
 }
+.our-plant .item-buy .details button .hover{
+    display: none;
+}
+.our-plant .item-buy .details button:hover {
+    background-color: #7DAD76;
+}
+.our-plant .item-buy .details button:hover .no-hover{
+    display: none;
+}
+.our-plant .item-buy .details button:hover .hover{
+    width: 19px;
+    height: 20px;
+    display: block;
+}
 
 .our-plant .item-buy .add button {
     width: 85.17px;
@@ -307,6 +324,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.our-plant .item-buy .add button:hover{
+    background-color: #567E32;
 }
 
 .our-plant .btn {
@@ -333,6 +353,9 @@
     color: #ffffff;
     background-color: #789d5c;
     border: none;
+}
+.our-plant .btn button:hover{
+    background-color: #567E32;
 }
 
 .our-plant .item-price .none {
@@ -404,6 +427,7 @@
         width: 158px;
         height: 38px;
     }
+
 
     .notification .content-right {
        margin-left: 44px;

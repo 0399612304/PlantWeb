@@ -101,6 +101,9 @@ footer {
   font-family: "Days One", sans-serif;
   background-color: #fff;
 }
+.footer-contact button:hover{
+  background-color: #E7EDDD;
+}
 
 .footer-contact button:hover {
   background-color: #e7eddd;

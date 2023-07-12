@@ -79,6 +79,7 @@ header {
 
     .header-container {
         padding-block: 0;
+        background-color: #297C35;
     }
 
     .logo-wrapper a img {

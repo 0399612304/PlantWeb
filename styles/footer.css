@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background-color: #567e32;
-  padding: 40px 0 30px;
+  padding: 30px 0 30px;
 }
 
 .footer-container {
@@ -13,7 +13,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .footer-above .footer-info {
@@ -21,6 +21,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
+  padding-top: 10px;
 }
 
 .footer-info .footer-logo-group {
@@ -34,6 +35,7 @@ footer {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  width: 101%;
 }
 
 .footer-info .footer-icon-social {
@@ -59,10 +61,13 @@ footer {
   text-align: center;
   font-weight: 400;
   line-height: 40px;
+  font-family: 'Days One', sans-serif;
+  margin: 0;
 }
 
 .footer-contact h3 span {
   font-size: 17px;
+  font-family: 'Days One', sans-serif;
 }
 
 .footer-contact input {
@@ -103,26 +108,27 @@ footer {
 
 .footer-above .footer-menu-group {
   display: flex;
-  gap: 40px;
+  gap: 58px;
 }
 
 .footer-menu-group .footer-menu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 13px;
 }
 
 .footer-menu h3 {
   font-size: 25px;
   font-weight: 400;
   color: #fff;
+  font-family: 'Days One', sans-serif;
 }
 
 .footer-menu .menu-item-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 18px;
 }
 
 .menu-item-list li a {
@@ -137,13 +143,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 21px;
   border-top: 3px solid #fff;
 }
 
 .footer-below p {
   font-size: 15px;
   color: #fff;
+  font-family: 'Days One', sans-serif;
 }
 
 .footer-below .footer-icon-group {

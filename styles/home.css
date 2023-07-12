@@ -19,11 +19,16 @@
 .common-content .content-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 67px;
     width: 564px;
     /* height: 554px; */
     border-radius: 50px;
     padding-top: 23px;
+}
+
+.common-content .content-right .btn-goshop button img {
+    width: auto;
+    height: auto;
 }
 
 .common-content .content-right h1 {
@@ -64,6 +69,21 @@
     letter-spacing: 0em;
 }
 
+.common-content .content-right button img {
+    display: none;
+}
+
+.common-content .content-right button:hover img {
+    display: block;
+}
+
+.common-content .content-right button:hover {
+    width: 373px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-feedback .mySlides {
     display: none
 }
@@ -76,7 +96,7 @@
     height: 900px;
 } */
 
-.main-feedback .feedback-wrapper{
+.main-feedback .feedback-wrapper {
     width: 1152px;
     background-color: #DAE3DB;
     display: flex;
@@ -201,7 +221,7 @@
 
 .plants-container {
     margin-bottom: 100px;
-    margin-top: 123px;
+    margin-top: 110px;
 }
 
 .plants-group {
@@ -343,28 +363,31 @@
     color: #fff;
     text-align: right;
 }
-.plants-item .plants-image img{
+
+.plants-item .plants-image img {
     transition: all 0.25s linear;
 }
+
 .plants-item:hover .plants-image img {
     transform: scale(1.1) translateY(-0.5vw);
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1152px) {
-    .main-feedback .feedback-wrapper  {
+    .main-feedback .feedback-wrapper {
         max-width: 96vw;
     }
 
-    .main-feedback .content-slider{
+    .main-feedback .content-slider {
         width: 100%;
         padding: 0;
     }
 
-    .main-feedback  .background-right{
+    .main-feedback .background-right {
         height: 900px;
     }
 }
 
-@media only screen  and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .common-content {
         flex-direction: column-reverse;
         max-width: 570px;
@@ -468,11 +491,13 @@
     }
 
 }
-@media only screen and (max-width: 600px){
-    .main-feedback{
+
+@media only screen and (max-width: 600px) {
+    .main-feedback {
         max-width: 450px;
     }
-    .main-feedback  .background-right {
+
+    .main-feedback .background-right {
         display: none;
     }
 }
